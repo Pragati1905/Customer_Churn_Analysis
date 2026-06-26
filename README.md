@@ -175,7 +175,9 @@ Customers most likely to churn typically have the following characteristics:
 
 # 📊 Dashboard Preview
 
-> *(Insert your dashboard screenshot here.)*
+><img width="1275" height="1650" alt="Bank_Churn_Analysis_Dashboard" src="https://github.com/user-attachments/assets/b1902a09-aab5-408e-882a-2aa346d51e7d" />
+
+
 
 ---
 
