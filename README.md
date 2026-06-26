@@ -1,186 +1,206 @@
-# Bank Customer Churn Analysis Using Excel
+# 📊 Bank Customer Churn Analysis Using Microsoft Excel
 
-## Project Overview
+## 📌 Project Overview
 
-Customer churn is a major challenge in the banking industry, as losing customers directly impacts revenue and profitability. This project analyzes a bank customer dataset to identify the key factors contributing to customer attrition and provide actionable recommendations to improve customer retention.
+Customer churn is one of the biggest challenges in the banking industry, as losing customers directly impacts revenue, profitability, and long-term business growth.
 
-The analysis was performed using Microsoft Excel with Pivot Tables, calculated metrics, and data visualization techniques.
-
----
-
-## Business Problem
-
-The bank wants to understand:
-
-* Why customers are leaving.
-* Which customer segments are at the highest risk of churn.
-* What actions can be taken to improve customer retention.
+In this project, I analyzed a **Bank Customer Churn Dataset** using **Microsoft Excel** to identify the major factors influencing customer attrition. Using Pivot Tables, Pivot Charts, calculated metrics, and an interactive dashboard, I transformed raw customer data into actionable business insights that can support data-driven decision-making.
 
 ---
 
-## Dataset Information
+## 🎯 Business Problem
 
-The dataset contains customer demographic, financial, and behavioral information, including:
+The objective of this analysis is to answer the following business questions:
 
-* CustomerId
-* CreditScore
+* What is the overall customer churn rate?
+* Which customer segments are most likely to churn?
+* Which customer characteristics influence churn?
+* How can the bank reduce customer attrition?
+
+---
+
+## 📂 Dataset Information
+
+**Source:** Maven Analytics – Bank Customer Churn Dataset
+
+The dataset contains **10,000 customer records** with the following attributes:
+
+* Customer ID
+* Credit Score
 * Geography
 * Gender
 * Age
 * Tenure
-* Balance
-* NumOfProducts
-* HasCrCard
-* IsActiveMember
-* EstimatedSalary
-* Exited (Target Variable)
+* Account Balance
+* Number of Products
+* Credit Card Ownership
+* Active Membership Status
+* Estimated Salary
+* Customer Churn (Exited)
 
-Where:
+**Target Variable**
 
-* Exited = 1 → Customer churned
-* Exited = 0 → Customer retained
+* **Exited = 1** → Customer Churned
+* **Exited = 0** → Customer Retained
 
 ---
 
-## Tools Used
+## 🛠️ Tools & Features Used
 
 * Microsoft Excel
 * Pivot Tables
 * Pivot Charts
-* Calculated Fields
+* GETPIVOTDATA()
+* IF() Functions
+* Calculated Metrics
 * Conditional Formatting
+* Interactive Dashboard
+* Slicers
 
 ---
 
-## Analysis Performed
+# 📋 Project Workflow
 
-### 1. Overall Churn Analysis
+### 1. Data Collection
 
-**Business Question:**
-What is the overall customer churn rate?
+* Imported the Bank Customer Churn dataset from Maven Analytics.
 
-**Finding:**
+### 2. Data Preprocessing
 
-* Total Customers: 10,000
-* Churned Customers: 2,037
-* Overall Churn Rate: 20.4%
+* Reviewed data structure and column types.
+* Created additional analytical columns:
 
----
+  * Age Group
+  * Balance Category
+  * Salary Category
+  * Credit Score Category
+  * Tenure Category
 
-### 2. Age Group Analysis
+### 3. Data Cleaning
 
-**Business Question:**
-How does customer age influence churn behavior?
+* Verified data consistency.
+* Checked for missing values.
+* Validated categorical fields.
 
-**Finding:**
+### 4. Data Exploration
 
-* Senior customers exhibited the highest churn rate.
-* Age appears to be a significant factor affecting customer attrition.
+* Explored customer demographics.
+* Examined customer behavior.
+* Identified important variables influencing churn.
 
----
+### 5. Data Analysis
 
-### 3. Credit Card Ownership Analysis
+Created **15 Pivot Table analyses** to answer key business questions, including:
 
-**Business Question:**
-Does owning a credit card reduce churn?
+* Overall Churn Analysis
+* Gender Analysis
+* Geography Analysis
+* Age Group Analysis
+* Credit Card Analysis
+* Customer Engagement Analysis
+* Balance Analysis
+* Product Analysis
+* Credit Score Analysis
+* Salary Analysis
+* High-Value Customer Analysis
+* Geography & Gender Analysis
+* Age & Product Analysis
+* Customer Tenure Analysis
+* Customer Churn Persona Development
 
-**Finding:**
+### 6. Dashboard Development
 
-* Customers without a credit card: 20.8% churn rate
-* Customers with a credit card: 20.2% churn rate
+Built an interactive Excel dashboard featuring:
 
-**Insight:**
-Credit card ownership has minimal impact on churn.
+* KPI Cards
+* Pivot Charts
+* Interactive Slicers
+* Business Recommendations
+* Key Insights
 
----
+### 7. Business Insights & Recommendations
 
-### 4. Active Member Analysis
-
-**Business Question:**
-Are inactive customers more likely to leave?
-
-**Finding:**
-
-* Inactive Customers: 26.9% churn rate
-* Active Customers: 14.3% churn rate
-
-**Insight:**
-Inactive customers are significantly more likely to churn.
-
----
-
-### 5. Customer Tenure Analysis
-
-**Business Question:**
-Are new customers more likely to leave than long-term customers?
-
-**Finding:**
-
-* Churn rates were relatively consistent across tenure segments.
-
-**Insight:**
-Tenure alone is not a strong predictor of customer churn.
+Converted analytical findings into actionable recommendations to support customer retention strategies.
 
 ---
 
-### 6. Geography Analysis
+# 📈 Key Findings
 
-(To be updated)
+### Overall Customer Churn
+
+* Total Customers: **10,000**
+* Churned Customers: **2,037**
+* Overall Churn Rate: **20.40%**
+
+### Age Analysis
+
+* Senior customers exhibit the highest churn rate.
+* Customer age is a significant factor affecting churn.
+
+### Customer Engagement
+
+* Inactive customers have a churn rate of **26.9%**.
+* Active customers have a churn rate of **14.3%**.
+
+### Credit Card Ownership
+
+* Credit card ownership has minimal impact on customer churn.
+
+### Customer Tenure
+
+* Churn rates remain relatively consistent across tenure groups.
+* Tenure alone is not a strong predictor of churn.
 
 ---
 
-### 7. Product Analysis
+# 👤 High-Risk Customer Persona
 
-(To be updated)
-
----
-
-### 8. Balance Analysis
-
-(To be updated)
-
----
-
-### 9. Salary Analysis
-
-(To be updated)
-
----
-
-### 10. Credit Score Analysis
-
-(To be updated)
-
----
-
-## Customer Churn Persona
-
-Based on the analysis, customers most likely to churn tend to exhibit the following characteristics:
+Customers most likely to churn typically have the following characteristics:
 
 * Senior age group
 * Inactive membership status
-* Additional characteristics identified through further analysis
+* Additional characteristics identified through segmentation analysis
 
 ---
 
-## Key Business Recommendations
+# 💡 Business Recommendations
 
-1. Focus retention efforts on inactive customers.
-2. Develop targeted engagement campaigns for senior customers.
-3. Monitor high-risk customer segments using churn dashboards.
-4. Improve customer engagement through loyalty and rewards programs.
-5. Implement proactive retention strategies before customers churn.
-
----
-
-## Project Outcome
-
-This project demonstrates how Excel can be used to perform exploratory data analysis, calculate churn metrics, and generate actionable business insights that support data-driven decision-making in the banking industry.
+* Prioritize retention campaigns for inactive customers.
+* Improve customer engagement through personalized communication.
+* Develop loyalty programs targeting senior customers.
+* Continuously monitor high-risk customer segments using dashboards.
+* Implement proactive retention strategies before customers churn.
 
 ---
 
-## Author
+# 📊 Dashboard Preview
 
-Praga
+> *(Insert your dashboard screenshot here.)*
 
-Aspiring Data Analyst | Excel | SQL | Python | Power BI | Tableau
+---
+
+# 🚀 Project Outcome
+
+This project demonstrates how Microsoft Excel can be used to perform end-to-end business analysis—from data preparation and exploration to dashboard development and business recommendations.
+
+The analysis showcases practical Excel skills commonly used in Data Analyst roles, including Pivot Tables, calculated metrics, interactive dashboards, and business storytelling.
+
+---
+
+## 👨‍💻 Author
+
+**Pragati Gaikwad**
+
+Aspiring Data Analyst
+
+### Skills
+
+* Microsoft Excel
+* SQL
+* Python
+* Power BI
+* Tableau
+
+---
+
+⭐ If you found this project useful, feel free to star the repository!
